@@ -37,7 +37,7 @@ function cadastroEventos() {
 
     nomeEvento = prompt("Qual o nome do evento?");
     eventos.push(nomeEvento);
-    participantes.push(["Evento: "+ nomeEvento]);
+    eventos.push(["Evento: "+ nomeEvento]);
     menuParticipante();
 }
 
@@ -47,6 +47,7 @@ function menuParticipante() {
         case "4":
             cadastroParticipantes();
         case "5":
+            eventos.push(["Participantes: "+ participantes]);
             menu();
         default:
             break;
@@ -70,6 +71,6 @@ function cadastroParticipantes() {
 
 function listarEventos(){
     console.log("Eventos e participantes cadastrados: ");
-    console.table(participantes);
+    console.log(participantes);
     menu();
 }
