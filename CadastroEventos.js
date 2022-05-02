@@ -27,7 +27,6 @@ function cadastroEventos() {
     var mes = String(data.getMonth() + 1).padStart(2, '0');
     var ano = data.getFullYear();
     var dataAtual = dia + '/' + mes + '/' + ano;
-    // console.log(dataAtual);
 
     var dataEvento = prompt("Insira a data do evento: (dd/mm/aaaa)");
 
