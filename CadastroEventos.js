@@ -5,8 +5,7 @@ var participantes = [];
 menu();
 
 function menu() {
-    console.log("Menu: \n1. Cadastro de Eventos\n2. Listagem de eventos\n3. Sair");
-    var opcao = prompt("Digite sua opção: ");
+    var opcao = prompt("Menu: \n1. Cadastro de Eventos\n2. Listagem de eventos\n3. Sair\nDigite sua opção: ");
     console.log(opcao);
 
     switch (opcao) {
